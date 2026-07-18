@@ -1,0 +1,18 @@
+ATITECH EDU PVT LTD
+MERN Batch Brochure
+
+Course Highlights:
+- MongoDB
+- Express.js
+- React.js
+- Node.js
+- Project-based learning
+- Industry-focused curriculum
+
+Batch Price:
+MRP: ₹499
+
+Contact:
+Phone: 6397964720, 6395804360
+Email: atitech.edu.pvt.ltd@gmail.com
+Website: http://localhost:3000

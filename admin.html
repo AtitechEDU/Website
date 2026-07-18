@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | ATITECH EDU</title>
+    <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      .admin-card { max-width: 900px; margin: 30px auto; background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 24px; box-shadow: 0 20px 35px rgba(0,0,0,0.06); }
+      .form-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+      label { display: flex; flex-direction: column; gap: 6px; font-weight: 600; color: var(--muted); }
+      input, textarea, button { padding: 12px; border-radius: 10px; border: 1px solid var(--border); font: inherit; }
+      textarea { min-height: 90px; resize: vertical; }
+      button { background: var(--primary); color: white; cursor: pointer; border: none; }
+      .message { margin-top: 10px; color: var(--primary); font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <a class="brand-link" href="/">
+          <img src="/logo.svg" alt="ATITECH EDU logo" class="logo" />
+          <div>
+            <h1>ATITECH EDU PVT LTD</h1>
+            <p>Admin Dashboard</p>
+          </div>
+        </a>
+      </div>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/lms">LMS</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </header>
+
+    <main class="section">
+      <div class="admin-card">
+        <h2>Site Settings</h2>
+        <form id="site-form">
+          <div class="form-grid">
+            <label>Company Name<input name="company_name" required /></label>
+            <label>Tagline<input name="tagline" required /></label>
+            <label>Hero Title<input name="hero_title" required /></label>
+            <label>Phone 1<input name="phone1" required /></label>
+            <label>Phone 2<input name="phone2" required /></label>
+            <label>Email<input name="email" required /></label>
+            <label>Twitter URL<input name="twitter" required /></label>
+            <label>Address Line 1<input name="address1" required /></label>
+            <label>Address Line 2<input name="address2" required /></label>
+          </div>
+          <label style="margin-top: 14px;">Hero Description<textarea name="hero_description" required></textarea></label>
+          <button type="submit">Save Site Settings</button>
+        </form>
+        <div id="site-message" class="message"></div>
+      </div>
+
+      <div class="admin-card">
+        <h2>Courses</h2>
+        <form id="course-form">
+          <div class="form-grid">
+            <label>Course Title<input name="title" required /></label>
+            <label>Course Description<input name="description" required /></label>
+          </div>
+          <button type="submit" style="margin-top: 12px;">Add Course</button>
+        </form>
+        <div id="course-message" class="message"></div>
+      </div>
+
+      <div class="admin-card">
+        <h2>Sync LMS Videos</h2>
+        <p>Refresh the database from the videos folder.</p>
+        <button id="sync-btn">Sync Videos</button>
+        <div id="sync-message" class="message"></div>
+      </div>
+    </main>
+
+    <script src="/admin.js"></script>
+  </body>
+</html>

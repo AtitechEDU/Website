@@ -1,0 +1,13 @@
+{
+  "name": "atitech-edu-site",
+  "version": "1.0.0",
+  "description": "ATITECH EDU PVT LTD website with LMS portal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.11.1",
+    "express": "^5.2.1"
+  }
+}

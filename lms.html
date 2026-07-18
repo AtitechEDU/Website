@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LMS Portal | ATITECH EDU PVT LTD</title>
+    <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <a class="brand-link" href="/">
+          <img src="/logo.svg" alt="ATITECH EDU PVT LTD logo" class="logo" />
+          <div>
+            <h1>ATITECH EDU PVT LTD</h1>
+            <p>LMS Portal</p>
+          </div>
+        </a>
+      </div>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/lms">Portal</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSefMOOEDY1nDT7CuODm7LXG0xnw5d6bAAMVI0Qn73ScN8A7zw/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">Contact</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </header>
+
+    <main class="lms-page">
+      <section class="section">
+        <div id="login-view" class="login-shell">
+          <div class="login-card">
+            <p class="eyebrow">Secure access</p>
+            <h2>Access LMS Portal</h2>
+            <form id="lms-login-form" class="login-form">
+              <label class="field">
+                <span>Email address</span>
+                <input id="lms-email" name="email" type="email" placeholder="your@email.com" required />
+              </label>
+              <label class="field">
+                <span>Password</span>
+                <input id="lms-password" name="password" type="password" placeholder="Enter password" required />
+              </label>
+              <button class="btn primary" type="submit">Login</button>
+            </form>
+            <p id="login-error" class="form-error" role="alert"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

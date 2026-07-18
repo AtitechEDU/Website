@@ -1,0 +1,19 @@
+# ignore dependencies
+node_modules/
+
+# ignore databases and local data
+app.db
+*.db
+*.sqlite
+*.sqlite3
+
+# ignore logs
+*.log
+
+# ignore OS files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc
